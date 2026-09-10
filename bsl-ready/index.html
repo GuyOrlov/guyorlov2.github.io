@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A free beginner-friendly checklist from cSeeker to help organisations prepare to book British Sign Language interpreting support." />
+  <title>BSL Ready by cSeeker | BSL Interpreter Booking Checklist</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to checklist</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="BSL Ready home"><span class="brand-mark" aria-hidden="true">BR</span><span><strong>BSL Ready</strong><small>by cSeeker</small></span></a>
+      <a class="header-link" href="https://cseeker.co.uk/" target="_blank" rel="noopener">cSeeker.co.uk</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="shell hero-grid">
+        <div>
+          <p class="eyebrow">Free 2-minute booking check</p>
+          <h1>Never booked a BSL interpreter before?</h1>
+          <p class="hero-copy">Answer a few simple questions. We’ll show what you already know, what is still missing, and what to send when you ask for a quote.</p>
+          <div class="hero-actions">
+            <button class="button button-primary" id="startButton" type="button">Start my BSL check</button>
+            <a class="button button-secondary" href="#how-it-works">How it works</a>
+          </div>
+          <p class="microcopy">No account needed. Your answers stay in this browser unless you choose to email cSeeker.</p>
+        </div>
+        <aside class="hero-card" aria-label="What you will get">
+          <span class="score-preview">70%</span>
+          <h2>Your booking readiness</h2>
+          <ul class="tick-list"><li>Clear checklist</li><li>Missing-information warnings</li><li>Suggested next steps</li><li>Ready-made enquiry summary</li></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="shell section" id="how-it-works">
+      <div class="section-heading"><p class="eyebrow">Simple English</p><h2>Know what to prepare before you book</h2><p>BSL Ready helps first-time organisers gather the details an interpreting provider will normally need before confirming suitable support.</p></div>
+      <div class="steps">
+        <article><span>1</span><h3>Tell us about the booking</h3><p>Date, time, place, setting and who needs support.</p></article>
+        <article><span>2</span><h3>Check the important details</h3><p>Communication preference, preparation material and recording information.</p></article>
+        <article><span>3</span><h3>Get your readiness result</h3><p>See what is complete and what you should confirm next.</p></article>
+      </div>
+    </section>
+
+    <section class="checklist-wrap" id="checklist" hidden>
+      <div class="shell checklist-shell">
+        <div class="progress-row"><div><p class="eyebrow">BSL booking check</p><p class="progress-label" id="progressLabel">Question 1 of 9</p></div><div class="progress-track" aria-hidden="true"><span id="progressBar"></span></div></div>
+        <form id="bookingForm" novalidate>
+          <section class="question active" data-step="0"><p class="question-number">01</p><h2>What are you booking?</h2><p class="question-help">Choose the closest option.</p><div class="option-grid">
+            <label><input type="radio" name="bookingType" value="Meeting or workplace support" required><span>Meeting / workplace</span></label>
+            <label><input type="radio" name="bookingType" value="Conference, exhibition or public event"><span>Conference / event</span></label>
+            <label><input type="radio" name="bookingType" value="Education or training"><span>Education / training</span></label>
+            <label><input type="radio" name="bookingType" value="Healthcare appointment"><span>Healthcare</span></label>
+            <label><input type="radio" name="bookingType" value="Legal or formal appointment"><span>Legal / formal</span></label>
+            <label><input type="radio" name="bookingType" value="Other"><span>Other</span></label>
+          </div></section>
+
+          <section class="question" data-step="1"><p class="question-number">02</p><h2>When is it?</h2><p class="question-help">Approximate times are okay for now.</p><div class="field-grid"><label>Date<input type="date" name="date" required></label><label>Start time<input type="time" name="startTime" required></label><label>Finish time<input type="time" name="endTime" required></label></div></section>
+
+          <section class="question" data-step="2"><p class="question-number">03</p><h2>Where will it happen?</h2><div class="option-grid three"><label><input type="radio" name="format" value="In person" required><span>In person</span></label><label><input type="radio" name="format" value="Online"><span>Online</span></label><label><input type="radio" name="format" value="Hybrid"><span>Hybrid</span></label></div><label class="full-field">Venue, postcode or online platform<input type="text" name="location" placeholder="e.g. NEC Birmingham, B40 1NT or Microsoft Teams" required></label></section>
+
+          <section class="question" data-step="3"><p class="question-number">04</p><h2>How many Deaf BSL users need support?</h2><label class="full-field">Number of people<input type="number" name="deafUsers" min="1" max="999" value="1" required></label></section>
+
+          <section class="question" data-step="4"><p class="question-number">05</p><h2>Have you confirmed the Deaf person’s communication preference?</h2><p class="question-help">Do not assume everyone who is Deaf uses BSL in the same way.</p><div class="option-grid three"><label><input type="radio" name="preference" value="Yes" required><span>Yes</span></label><label><input type="radio" name="preference" value="No"><span>No</span></label><label><input type="radio" name="preference" value="Not sure"><span>Not sure</span></label></div></section>
+
+          <section class="question" data-step="5"><p class="question-number">06</p><h2>What kind of content will be discussed?</h2><div class="option-grid"><label><input type="radio" name="contentType" value="General" required><span>General</span></label><label><input type="radio" name="contentType" value="Technical or specialist"><span>Technical / specialist</span></label><label><input type="radio" name="contentType" value="Medical or healthcare"><span>Medical</span></label><label><input type="radio" name="contentType" value="Legal or formal"><span>Legal / formal</span></label><label><input type="radio" name="contentType" value="Performance, stage or public presentation"><span>Stage / performance</span></label><label><input type="radio" name="contentType" value="Other"><span>Other</span></label></div></section>
+
+          <section class="question" data-step="6"><p class="question-number">07</p><h2>Do you have preparation material?</h2><p class="question-help">For example: agenda, slides, scripts, speaker names, previous minutes or specialist terms.</p><div class="option-grid three"><label><input type="radio" name="prep" value="Yes" required><span>Yes</span></label><label><input type="radio" name="prep" value="Not yet"><span>Not yet</span></label><label><input type="radio" name="prep" value="Not applicable"><span>Not applicable</span></label></div></section>
+
+          <section class="question" data-step="7"><p class="question-number">08</p><h2>Will the interpreter be filmed, livestreamed or photographed?</h2><div class="option-grid three"><label><input type="radio" name="recording" value="Yes" required><span>Yes</span></label><label><input type="radio" name="recording" value="No"><span>No</span></label><label><input type="radio" name="recording" value="Not sure"><span>Not sure</span></label></div></section>
+
+          <section class="question" data-step="8"><p class="question-number">09</p><h2>Anything else the provider should know?</h2><p class="question-help">Optional. You can mention access, security, travel, stage position or other requirements.</p><label class="full-field">Additional information<textarea name="notes" rows="5" placeholder="Add any useful details here..."></textarea></label></section>
+
+          <div class="form-actions"><button class="button button-secondary" id="backButton" type="button" hidden>Back</button><button class="button button-primary" id="nextButton" type="button">Continue</button></div>
+          <p class="form-error" id="formError" role="alert" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="results" id="results" hidden>
+      <div class="shell results-grid">
+        <div class="result-score-card"><p class="eyebrow">Your result</p><div class="score-ring" id="scoreRing"><span id="scoreValue">0%</span></div><h2 id="scoreTitle">Your booking is taking shape</h2><p id="scoreMessage"></p><button class="button button-secondary" id="restartButton" type="button">Start again</button></div>
+        <div class="result-detail"><h2>Your booking checklist</h2><ul class="result-list" id="resultList"></ul><div class="recommendation" id="recommendation"></div><div class="summary-box"><div><p class="eyebrow">Ready-made enquiry</p><h3>Send your details to cSeeker</h3><p>We’ll create an email from your answers. You can review it before sending.</p></div><a class="button button-primary" id="quoteButton" href="#">Email cSeeker for a quote</a></div><p class="disclaimer">This checker provides general booking guidance only. The interpreting provider and Deaf person should confirm the most suitable communication professional(s) for the assignment.</p></div>
+      </div>
+    </section>
+
+    <section class="shell section data-section">
+      <div class="section-heading"><p class="eyebrow">Built to learn</p><h2>What cSeeker can measure</h2><p>The site is prepared for anonymous analytics events so you can later see how people use the checker without collecting their checklist answers.</p></div>
+      <div class="metric-grid"><article><strong>Starts</strong><span>How many people begin</span></article><article><strong>Completions</strong><span>How many reach their result</span></article><article><strong>Quote clicks</strong><span>How many contact cSeeker</span></article><article><strong>Drop-off</strong><span>Which step people leave on</span></article></div>
+      <p class="microcopy centred">A real analytics service such as GA4, Plausible or similar must be connected before aggregate visitor totals are collected.</p>
+    </section>
+
+    <section class="faq-section">
+      <div class="shell faq-grid"><div><p class="eyebrow">For first-time bookers</p><h2>Quick answers</h2></div><div>
+        <details><summary>Should I ask the Deaf person what support they prefer?</summary><p>Yes. Communication needs vary. Ask the person what communication support works best for them rather than assuming.</p></details>
+        <details><summary>Do I always need two interpreters?</summary><p>No fixed answer suits every booking. Duration, complexity, breaks, setting and performance demands can all matter. Give the provider full details so they can advise appropriately.</p></details>
+        <details><summary>Why send slides or an agenda beforehand?</summary><p>Preparation material can help an interpreter understand names, terminology, context and the structure of the session.</p></details>
+        <details><summary>What if the event is being livestreamed?</summary><p>Tell the interpreting provider before confirming the booking. Filming, broadcast position, preparation and usage of the interpreter’s image may need to be agreed.</p></details>
+      </div></div>
+    </section>
+  </main>
+
+  <footer><div class="shell footer-inner"><div><strong>BSL Ready</strong><p>A free booking-preparation tool by cSeeker Ltd.</p></div><div><a href="mailto:bookings@cseeker.co.uk">bookings@cseeker.co.uk</a><a href="https://cseeker.co.uk/" target="_blank" rel="noopener">cSeeker website</a></div></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
